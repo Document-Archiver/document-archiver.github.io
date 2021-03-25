@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Document Archiver">
+  <meta name="author" content="Stephan Sann">
+
+  <title>Document Archiver</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Document Archiver</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#storage">Storage</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#download">Download</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-primary text-white">
+    <div class="container text-center">
+      <h2>Document Archiver</h2>
+      <p class="lead">Archive all your documents in a consistent way, which enables you to retrieve them later fast and easy.</p>
+	  <img src="resources/screenshot.png" alt="Screenshot">
+    </div>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>About Document Archiver</h2>
+          <p class="lead">
+		  We all store different kind of documents (office documents, miscellaneous types of PDFs, Images, Audio-Files, etc.) on our systems.<br/>
+<br/>
+The challenge here is to find a consistent approach which will help us to retrieve the documents later in a fast and easy way.
+<br/>
+Traditionally many people tend to establish some kind of folder structure on their storage space, which will then hold documents by a topic, a year, or whatever seems to fit.
+Anyhow, this approach often leads to a clutter of heterogeneous folder arrangements (over time one finds that another subfolder is needed at some place - and already consistency is broken).
+It may also lead to duplicates (Should one store a document regarding a car insurance in a folder "car" or in a folder "insurances"? Maintaining a copy in both places is not really a good idea.).<br/>
+<br/>
+Document Archiver is inspired by the project "PDF Archiver" (https://github.com/PDF-Archiver/PDF-Archiver), which utilizes a consistent way to store PDF files in a defined folder structure and by using a fixed file naming pattern.
+This application picks up this core idea and makes it available for all document types and on all mayor platforms. Thanks to Julian Kahnert for agreeing to build on his great work!
+		  </p>
+	  </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="storage" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Storage</h2>
+		  <p class="lead">
+		  <p>Documents will be archived in this manner:</p>
+<pre><code>└── ~/Documents/DocumentArchiver
+    ├── pdfs
+    │   ├── <span class="hljs-number">2020</span>
+    │   │   ├── <span class="hljs-number">2020</span><span class="hljs-number">-01</span><span class="hljs-number">-05</span>--invoice__car_insurance.pdf
+    │   │   └── <span class="hljs-number">2020</span><span class="hljs-number">-07</span><span class="hljs-number">-01</span>--invoice__house_insurance.pdf
+    │   └── <span class="hljs-number">2021</span>
+    │       └── <span class="hljs-number">2021</span><span class="hljs-number">-01</span><span class="hljs-number">-05</span>--invoice__car_insurance.pdf
+    └── images
+        ├── <span class="hljs-number">2020</span>
+        │   ├── <span class="hljs-number">2020</span><span class="hljs-number">-01</span><span class="hljs-number">-20</span><span class="hljs-number">-00</span><span class="hljs-number">-03</span><span class="hljs-number">-17</span>--cake__birthday_stephan.jpg
+        │   ├── <span class="hljs-number">2020</span><span class="hljs-number">-01</span><span class="hljs-number">-20</span><span class="hljs-number">-00</span><span class="hljs-number">-03</span><span class="hljs-number">-54</span>--cake__birthday_stephan.jpg
+        │   └── <span class="hljs-number">2020</span><span class="hljs-number">-03</span><span class="hljs-number">-16</span><span class="hljs-number">-15</span><span class="hljs-number">-32</span><span class="hljs-number">-23</span>--party__birthday_natalia.jpg
+        └── <span class="hljs-number">2021</span>
+            └── <span class="hljs-number">2021</span><span class="hljs-number">-01</span><span class="hljs-number">-20</span><span class="hljs-number">-00</span><span class="hljs-number">-02</span><span class="hljs-number">-42</span>--party__birthday_stephan.jpg
+</code></pre><ul>
+<li><strong>Date[-Time]:</strong> <code>yyyy-MM-dd</code> or <code>yyyy-MM-dd-HH-mm-ss</code> Date (and - if requested - time) of the document content.</li>
+<li><strong>Description:</strong> <code>--invoice</code> Meaningful description of the document.</li>
+<li><strong>Tags:</strong> <code>__car_insurance</code> Tags which will help you find the document in your archive.</li>
+</ul>
+		  </p>
+	  </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="download">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Download</h2>
+          <p class="lead">
+<p><strong>
+Requirement:<br/>
+You must have <a href="https://adoptopenjdk.net/" target="_blank">Java</a> (minimum version 9) installed on your system.
+Not sure? Check on your command line with:
+</strong>
+<pre><code>java --version</code></pre>
+</p>
+
+<h3>
+Downloads:
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.0.0/document-archiver-1.0.0-linux.jar">[LINUX]</a>
+-or-
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.0.0/document-archiver-1.0.0-mac.jar">[MACOS]</a>
+-or-
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.0.0/document-archiver-1.0.0-win.jar">[WINDOWS]</a>
+</h3>
+<br/>
+<p>Startup (example for macOS - possible variants &quot;linux&quot;, &quot;mac&quot;, &quot;win&quot;):</p>
+<pre><code><span class="hljs-selector-tag">java</span> <span class="hljs-selector-tag">-jar</span> <span class="hljs-selector-tag">document-archiver-1</span><span class="hljs-selector-class">.0-0-mac</span><span class="hljs-selector-class">.jar</span>
+</code></pre>
+		</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Also find Document Archiver on
+	  <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver" target="_blank">GitHub</a></p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/scrolling-nav.js"></script>
+
+</body>
+
+</html>
