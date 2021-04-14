@@ -32,10 +32,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#challenge">The challenge</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#storage">Storage</a>
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#download">Download</a>
@@ -53,33 +53,47 @@
     </div>
   </header>
 
-  <section id="about">
+  <section id="challenge">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>About Document Archiver</h2>
-          <p class="lead">
-		  We all store different kind of documents (office documents, miscellaneous types of PDFs, Images, Audio-Files, etc.) on our systems.<br/>
-<br/>
-The challenge here is to find a consistent approach which will help us to retrieve the documents later in a fast and easy way.
-<br/>
-Traditionally many people tend to establish some kind of folder structure on their storage space, which will then hold documents by a topic, a year, or whatever seems to fit.
-Anyhow, this approach often leads to a clutter of heterogeneous folder arrangements (over time one finds that another subfolder is needed at some place - and already consistency is broken).
-It may also lead to duplicates (Should one store a document regarding a car insurance in a folder "car" or in a folder "insurances"? Maintaining a copy in both places is not really a good idea.).<br/>
-<br/>
-Document Archiver is inspired by the project "PDF Archiver" (https://github.com/PDF-Archiver/PDF-Archiver), which utilizes a consistent way to store PDF files in a defined folder structure and by using a fixed file naming pattern.
-This application picks up this core idea and makes it available for all document types and on all mayor platforms. Thanks to Julian Kahnert for agreeing to build on his great work!
-		  </p>
+          <h2>The challenge</h2>
+          <p>Does your document archive look somewhat messy like this?</p>
+          <img src="resources/archive-messy.png" alt="Messy document archive" class="autoResizeImage imageWithShadow"/>
+          <br/>
+          <p>How about it would look rather tidy like this?</p>
+          <img src="resources/archive-tidy.png" alt="Tidy document archive" class="autoResizeImage imageWithShadow"/>
 	  </div>
       </div>
     </div>
   </section>
 
-  <section id="storage" class="bg-light">
+  <section id="about" class="bg-light">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2>Storage</h2>
+<h2>About Document Archiver</h2>
+          <p class="lead">
+		  We all store different kind of documents (office documents, miscellaneous types of PDFs, Images, Audio-Files, etc.) on our systems.<br/>
+<br/>
+The challenge here is to find a consistent approach which will help us to retrieve the documents later in a fast and easy way.<br/>
+<br/>
+Traditionally many people tend to establish some kind of folder structure on their storage space, which will then hold documents by a topic, a year, or whatever seems to fit.<br/>
+<br/>
+However, this approach comes with various problems:</p>
+<ul>
+<li>It often leads to a clutter of heterogeneous folder arrangements (over time one finds that another subfolder is needed at some place - and already consistency is broken).</li>
+<li>It may lead to duplicates (Have you spotted the duplicate in the example above? The document "damage on car 09_14_2020 photo for insurance.jpg" is stored in a folder "car" and
+    also in a folder "SecureInsurance LTD". This easily happens when documents would be "right" in both places. Anyhow with archiving duplicates should be avoided by all means.).</li>
+<li>It can be complicated to find things later if the naming of the files is not top-notch (In which folder did one store a certain document?).</li>
+</ul>
+<br/>
+<p class="lead">
+Document Archiver is inspired by the project "PDF Archiver" (https://github.com/PDF-Archiver/PDF-Archiver), which utilizes a consistent way to store PDF files in a defined folder structure and by using a fixed file naming pattern.
+This application picks up this core idea and makes it available for all document types and on all mayor platforms. Thanks to Julian Kahnert for agreeing to build on his great work!
+		  </p>
+		  <br/>
+		  <h3>Storage</h3>
 		  <p class="lead">
 		  <p>Documents will be archived in this manner:</p>
 <pre><code>└── ~/Documents/DocumentArchiver
@@ -114,7 +128,7 @@ This application picks up this core idea and makes it available for all document
           <h2>Download</h2>
           <p class="lead">
           
-          Document Archiver can be downloaded in two ways.
+          Document Archiver is open source software (free to use) and can be downloaded in two ways.
 
           <h3><strong>Installer package including Java Runtime</strong></h3>
           <p>The "nice and easy" option for those who would like to install the application on their system and don't want to deal with things like setting up Java or executing
@@ -122,11 +136,11 @@ This application picks up this core idea and makes it available for all document
 
           <h4>
           Downloads:
-          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.3.0/DocumentArchiver_unix_1_3_0.sh">[LINUX]</a>
+          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.4.0/DocumentArchiver_unix_1_4_0.sh">[LINUX]</a>
           -or-
-          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.3.0/DocumentArchiver_macos_1_3_0.dmg">[MACOS]</a>
+          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.4.0/DocumentArchiver_macos_1_4_0.dmg">[MACOS]</a>
           -or-
-          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.3.0/DocumentArchiver_windows-x64_1_3_0.exe">[WINDOWS]</a>
+          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.4.0/DocumentArchiver_windows-x64_1_4_0.exe">[WINDOWS]</a>
           </h4>
           
           <p>The installer files were created with <a href="https://www.ej-technologies.com/products/install4j/overview.html" target="_blank">install4j</a>, kindly supplied by
@@ -154,15 +168,15 @@ Not sure? Check on your command line with:
 
 <h4>
 Downloads:
-<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.3.0/document-archiver-1.3.0-linux.jar">[LINUX]</a>
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.4.0/document-archiver-1.4.0-linux.jar">[LINUX]</a>
 -or-
-<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.3.0/document-archiver-1.3.0-mac.jar">[MACOS]</a>
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.4.0/document-archiver-1.4.0-mac.jar">[MACOS]</a>
 -or-
-<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.3.0/document-archiver-1.3.0-win.jar">[WINDOWS]</a>
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.4.0/document-archiver-1.4.0-win.jar">[WINDOWS]</a>
 </h4>
 <br/>
 <p>Startup (example for macOS - possible variants &quot;linux&quot;, &quot;mac&quot;, &quot;win&quot;):</p>
-<pre><code>java -jar document-archiver-1.3.0-mac.jar</code></pre>
+<pre><code>java -jar document-archiver-1.4.0-mac.jar</code></pre>
 		</p>
         </div>
       </div>
