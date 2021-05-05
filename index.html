@@ -135,11 +135,11 @@ This application picks up this core idea and makes it available for all document
 
           <h4>
           Downloads:
-          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.6.0/DocumentArchiver_unix_1_6_0.sh">[LINUX]</a>
+          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v2.0.0/DocumentArchiver_unix_2_0_0.sh">[LINUX]</a>
           -or-
-          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.6.0/DocumentArchiver_macos_1_6_0.dmg">[MACOS]</a>
+          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v2.0.0/DocumentArchiver_macos_2_0_0.dmg">[MACOS]</a>
           -or-
-          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v1.6.0/DocumentArchiver_windows-x64_1_6_0.exe">[WINDOWS]</a>
+          <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver/releases/download/v2.0.0/DocumentArchiver_windows-x64_2_0_0.exe">[WINDOWS]</a>
           </h4>
           
           <p>The installer files were created with <a href="https://www.ej-technologies.com/products/install4j/overview.html" target="_blank">install4j</a>, kindly supplied by
@@ -154,8 +154,8 @@ This application picks up this core idea and makes it available for all document
           The MacOS installer package is code-signed and notarized by Apple; Linux doesn't check for code-signing.
           <br/>
           <br/>
-          <h3><strong>JAR file (Java must be installed)</strong></h3>
-          <p>If you already have Java on your system, don't feel like installing and don't fear the command line, you can download one of the following JAR files (and furthermore
+          <h3><strong>ZIP file (Java must be installed)</strong></h3>
+          <p>If you already have Java on your system, don't feel like installing and don't fear the command line, you can download one of the following ZIP files (and furthermore
           save some MBs on your storage).</p>
 <p><strong>
 Requirement:<br/>
@@ -166,15 +166,33 @@ Not sure? Check on your command line with:
 
 <h4>
 Downloads:
-<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.6.0/document-archiver-1.6.0-linux.jar">[LINUX]</a>
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/2.0.0/document-archiver-2.0.0-linux.zip">[LINUX]</a>
 -or-
-<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.6.0/document-archiver-1.6.0-mac.jar">[MACOS]</a>
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/2.0.0/document-archiver-2.0.0-mac.zip">[MACOS]</a>
 -or-
-<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/1.6.0/document-archiver-1.6.0-win.jar">[WINDOWS]</a>
+<a href="https://repository.sophisticatedapps.com/releases/com/sophisticatedapps/archiving/document-archiver/2.0.0/document-archiver-2.0.0-win.zip">[WINDOWS]</a>
 </h4>
 <br/>
-<p>Startup (example for macOS - possible variants &quot;linux&quot;, &quot;mac&quot;, &quot;win&quot;):</p>
-<pre><code>java -jar document-archiver-1.6.0-mac.jar</code></pre>
+<p><strong>Startup</strong></p>
+Linux
+<pre><code>
+unzip document-archiver-2.0.0-linux.zip
+cd document-archiver-2.0.0-linux/
+./DocumentArchiver.sh
+</code></pre>
+macOS
+<pre><code>
+unzip document-archiver-2.0.0-mac.zip
+cd document-archiver-2.0.0-mac/
+./DocumentArchiver.sh
+</code></pre>
+Windows
+<pre><code>
+:: Extract ZIP file (for example with Windows Explorer) ::
+cd document-archiver-2.0.0-win/
+DocumentArchiver.bat
+</code></pre>
+
         </div>
       </div>
     </div>
