@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+  <meta content="Document Archiver" name="description" />
+  <meta content="Stephan Sann" name="author" />
+
+  <title>Document Archiver and PDF Archiver 🤝</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/scrolling-nav.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <div class="container">
+    <img src="resources/logo.png" alt="DocumentArchiver logo" />
+    &nbsp;&nbsp;
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">Document Archiver &amp; PDF Archiver</a>
+    <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarResponsive" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#basics">Basics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#setup">Setup</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#step-by-step">Step-by-step</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger" href="#support">Support</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header class="bg-primary text-white">
+  <div class="container text-center">
+    <h2>Document Archiver and PDF Archiver 🤝</h2>
+    <p class="lead">Document Archiver and PDF Archiver can work with the same archiving folders. Here is how.</p>
+    <img alt="Screenshot" class="autoResizeImage imageWithShadow" src="resources/da-and-pa.png" />
+  </div>
+</header>
+
+<section id="basics">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto lead">
+        <h2>Same archiving structure</h2>
+        <p>
+          As mentioned on the <a href="index.html#about">Homepage</a>, Document Archiver is build on the same filename patterns and folder structures as PDF Archiver.<br/>
+          <br />
+          This may rise the question: Can both apps use the same archiving folders, so one does not have to deal with multiple archives?<br />
+          <br />
+          The answer is: Yes! And as a consequence PDFs archived in Document Archiver can be viewed in PDF Archiver and vice versa.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light" id="setup">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto lead">
+        <h2>Basics</h2>
+        <p>By default Document Archiver will archive PDF files within a subfolder of "DocumentArchiver", which resides in a folder "Documents" within your home directory:<p/>
+<pre><code>└── ~/Documents/DocumentArchiver/pdfs
+    └── #Year#
+        └── #Date#--#Description#__#Tags#.#Suffix#
+</code></pre>
+<br />
+        <p>PDF Archiver will archive its PDFs within an iCloud folder:</p>
+<pre><code>└── ~/Library/Mobile Documents/iCloud~de~JulianKahnert~PDFArchiver/Documents
+    └── #Year#
+        └── #Date#--#Description#__#Tags#.#Suffix#
+</code></pre>
+<br />
+        <p>Combining the two is as easy as setting a symbolic link :-)</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="step-by-step">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto lead">
+        <h2>Step by step</h2>
+        <p>1.) If you already have archived PDF files with Document Archiver, move the content of "~/Documents/DocumentArchiver/pdfs" to
+        "~/Library/Mobile Documents/iCloud~de~JulianKahnert~PDFArchiver/Documents" and afterwards delete the folder "pdfs".</p>
+        <p>2.) In a terminal window, change to Document Archiver's archive directory:</p>
+        <pre><code>cd ~/Documents/DocumentArchiver/</code></pre>
+<br />
+        <p>3.) Create a symbolic link to PDF Archiver's iCloud directory:
+        <pre><code>ln -s ~/Library/Mobile\ Documents/iCloud~de~JulianKahnert~PDFArchiver/Documents/ pdfs</code></pre>
+<br />
+        <p>Done! Both applications will now archive PDFs in the same folder.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-light" id="support">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto lead">
+        <h2>Love it?</h2>
+        <p>If you love Document Archiver and would like to support its further development, every little support is appreciated 🙏🏻😊</p>
+        <h4>Support Document Archiver on Ko-fi</h4>
+        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Document Archiver', '#29abe0', 'Z8Z54C1Q9');kofiwidget2.draw();</script>
+		<br /><br />
+        <h4>Like (upvote) Document Archiver on Product Hunt</h4>
+        <a href="https://www.producthunt.com/posts/document-archiver?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-document-archiver" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=295952&theme=light" alt="Document Archiver - Archive all your documents in a clean and consistent way | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">
+      Also find Document Archiver on <a href="https://github.com/Document-Archiver/com.sophisticatedapps.archiving.document-archiver" target="_blank">GitHub</a> |
+      <a href="https://hanadigital.github.io/grev/?user=Document-Archiver&repo=com.sophisticatedapps.archiving.document-archiver" target="_blank">DL-Stats</a>
+    </p>
+  </div>
+  <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom JavaScript for this theme -->
+<script src="js/scrolling-nav.js"></script>
+</body>
+</html>
